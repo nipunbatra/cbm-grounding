@@ -1,0 +1,72 @@
+async (page) => {
+  const errors = [];
+  page.on('pageerror', e => errors.push(e.message));
+  const checks = [];
+  const check = (condition, name) => { if (!condition) throw new Error(name); checks.push(name); };
+  await page.setViewportSize({width: 1440, height: 1100});
+  await page.goto('http://127.0.0.1:8765', {waitUntil: 'domcontentloaded'});
+  check(await page.locator('#title').textContent() === 'Cardinal', 'CUB default loads');
+  await page.locator('#all-points-toggle').check();
+  check(await page.locator('#stage circle').count() === 13, 'Native visible Cardinal parts drawn');
+  await page.locator('#all-points-toggle').uncheck();
+  await page.locator('#proxy-toggle').check();
+  check(await page.locator('#stage rect[stroke-dasharray]').count() > 0, 'CUB proxies visibly dashed');
+  await page.locator('#search').fill('crown color: red');
+  check((await page.locator('#detail').textContent()).includes('176, 53'), 'Selected crown uses native CUB coordinate');
+  await page.locator('#detail summary').click();
+  check((await page.locator('#detail').textContent()).includes('898 5 176 53 1'), 'Native point source row exposed');
+  await page.screenshot({path:'outputs/viewer-cub-desktop.png', fullPage:true});
+  await page.locator('#search').fill('unmatchable concept');
+  check((await page.locator('#concept-list').textContent()).includes('No concepts match'), 'Search empty state');
+  await page.locator('#svg-tab').click();
+  check((await page.locator('#title').textContent()).includes('Photographic'), 'Realistic tab defaults to photo texture');
+  check((await page.locator('#detail').textContent()).includes('approximate'), 'Photo mask anatomical limitation visible');
+  check((await page.locator('#class-output').textContent()).includes('A'), 'Reference class A');
+  await page.locator('#bits button').first().click();
+  check((await page.locator('#class-output').textContent()).includes('B'), 'Bill intervention changes toy class');
+  check((await page.locator('#edit-note').textContent()).includes('drawing'), 'Intervention does not imply image edit');
+  await page.locator('#reset').click();
+  check((await page.locator('#class-output').textContent()).includes('A'), 'Reset restores ground-truth vector');
+  await page.screenshot({path:'outputs/viewer-realistic-desktop.png',fullPage:true});
+  await page.locator('#svg-style').selectOption('naturalistic');
+  check((await page.locator('#coords').textContent()).includes('naturalistic-'), 'Pure-vector realistic option works');
+  await page.screenshot({path:'outputs/viewer-vector-desktop.png',fullPage:true});
+  await page.locator('#simple-tab').click();
+  await page.locator('#thumbnails button').nth(2).click();
+  await page.locator('#concept-list button').nth(1).click();
+  check((await page.locator('#detail').textContent()).includes('known absent'), 'Absent synthetic crown has empty region');
+  check(await page.locator('#stage rect[stroke="#276c55"]').count() === 0, 'No positive box for absent SVG concept');
+  await page.locator('#assistant-tab').click();
+  check(await page.locator('#concept-list button').count() === 8, 'All eight flower concepts shown');
+  check((await page.locator('#detail').textContent()).includes('0.99'), 'Assistant score visible');
+  check((await page.locator('#detail').textContent()).includes('Definition:'), 'Concept definition visible');
+  await page.locator('#concept-list button').nth(5).click();
+  check((await page.locator('#detail').textContent()).includes('Uncertain'), 'Uncertain flower judgment is not displayed as absent');
+  check(await page.locator('#stage rect').count() === 0, 'Uncertain flower judgment has no asserted box');
+  await page.locator('#concept-list button').nth(3).click();
+  check(await page.locator('#stage rect').count() === 1, 'Assistant supporting box renders');
+  await page.screenshot({path:'outputs/viewer-flowers-desktop.png',fullPage:true});
+  const downloadPromise=page.waitForEvent('download');
+  await page.locator('#download-all').click();
+  const download=await downloadPromise;
+  check(download.suggestedFilename()==='concept-grounding-annotations.json','Browser-side JSON download works');
+  await page.setViewportSize({width:390,height:844});
+  for (const id of ['cub-tab','svg-tab','simple-tab','assistant-tab']) {
+    await page.locator('#'+id).click();
+    const widths=await page.evaluate(()=>({client:document.documentElement.clientWidth,scroll:document.documentElement.scrollWidth}));
+    check(widths.scroll<=widths.client, 'Mobile no horizontal overflow: '+id);
+  }
+  await page.screenshot({path:'outputs/viewer-flowers-mobile.png',fullPage:true});
+  const imageReport=await page.evaluate(async()=>{
+    const d=JSON.parse(document.getElementById('dataset').textContent);
+    const all=['cub','synthetic','naturalistic','photographic','assistant'].flatMap(k=>d[k]);
+    const bad=[];
+    for(const e of all){const img=new Image();img.src=e.image_data;try{await img.decode();if(img.naturalWidth!==e.width||img.naturalHeight!==e.height)bad.push(e.id+' dimensions');}catch{bad.push(e.id+' decode');}}
+    return {count:all.length,bad};
+  });
+  check(imageReport.count===33&&!imageReport.bad.length, 'All 33 embedded images decode at original dimensions');
+  check(!errors.length,'No page JavaScript errors');
+  await page.setViewportSize({width:1440,height:1100});
+  await page.locator('#svg-tab').click();
+  return {status:'passed',checks,images:imageReport.count,errors};
+}

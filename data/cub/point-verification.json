@@ -1,0 +1,31 @@
+{
+  "verified_on": "2026-10-12",
+  "independent_copy_url": "https://raw.githubusercontent.com/makino-w/A-fine-grained-image-classification-system-for-birds/37914987352cb2f8c9dfb7c314736fb7029dab57/dataset/CUB_200_2011/parts/part_locs.txt",
+  "sha256": "5be41e1e1e9165ff19632da203e30384fe8a359347c545ffc12ab99155b0415f",
+  "selected_part_records": 150,
+  "matching_records": 150,
+  "all_numeric_records_equal": true,
+  "native_fields": [
+    "image_id",
+    "part_id",
+    "x",
+    "y",
+    "visible"
+  ],
+  "authored_fields": [
+    "attribute_to_part_mapping",
+    "proxy_box_extent"
+  ],
+  "example": {
+    "image_id": 898,
+    "beak": [
+      134,
+      83
+    ],
+    "crown": [
+      176,
+      53
+    ]
+  },
+  "official_description": "https://www.vision.caltech.edu/datasets/cub_200_2011/"
+}

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="360" viewBox="0 0 560 360">
+<title>Reference bird</title>
+<rect width="560" height="360" fill="#f2f1e9"/>
+<g transform="translate(0 0)">
+<polygon points="148,230 72,227 97,274 165,263" fill="#929a91"/>
+<rect x="231" y="291" width="7" height="31" fill="#757b71"/>
+<rect x="271" y="291" width="7" height="31" fill="#757b71"/>
+<ellipse cx="249" cy="235" rx="112" ry="72" fill="#c2c7ba"/>
+<circle cx="310" cy="147" r="54" fill="#c2c7ba"/>
+<circle cx="333" cy="144" r="5" fill="#303b35"/>
+<g id="bill"><polygon points="350,141 407,158 350,175" fill="#e6b84d"/></g>
+<g id="crown"><ellipse cx="309" cy="115" rx="31" ry="13" fill="#b8574c"/></g>
+<g id="wing"><ellipse cx="238" cy="228" rx="70" ry="35" fill="#507b99"/></g>
+</g></svg>

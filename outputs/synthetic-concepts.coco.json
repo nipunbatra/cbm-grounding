@@ -1,0 +1,543 @@
+{
+  "info": {
+    "description": "SVG positive concepts only; exact vector AABBs. Areas are true vector shape areas. No CUB proxies."
+  },
+  "images": [
+    {
+      "id": 1,
+      "file_name": "images/svg/01-reference.svg",
+      "width": 560,
+      "height": 360
+    },
+    {
+      "id": 2,
+      "file_name": "images/svg/02-neutral-bill.svg",
+      "width": 560,
+      "height": 360
+    },
+    {
+      "id": 3,
+      "file_name": "images/svg/03-neutral-crown.svg",
+      "width": 560,
+      "height": 360
+    },
+    {
+      "id": 4,
+      "file_name": "images/svg/04-neutral-wing.svg",
+      "width": 560,
+      "height": 360
+    },
+    {
+      "id": 5,
+      "file_name": "images/svg/05-moved-bird.svg",
+      "width": 560,
+      "height": 360
+    },
+    {
+      "id": 6,
+      "file_name": "images/svg/06-red-distractor.svg",
+      "width": 560,
+      "height": 360
+    },
+    {
+      "id": 7,
+      "file_name": "images/svg-naturalistic/01-reference.svg",
+      "width": 720,
+      "height": 480
+    },
+    {
+      "id": 8,
+      "file_name": "images/svg-naturalistic/02-neutral-bill.svg",
+      "width": 720,
+      "height": 480
+    },
+    {
+      "id": 9,
+      "file_name": "images/svg-naturalistic/03-neutral-crown.svg",
+      "width": 720,
+      "height": 480
+    },
+    {
+      "id": 10,
+      "file_name": "images/svg-naturalistic/04-neutral-wing.svg",
+      "width": 720,
+      "height": 480
+    },
+    {
+      "id": 11,
+      "file_name": "images/svg-naturalistic/05-moved-bird.svg",
+      "width": 720,
+      "height": 480
+    },
+    {
+      "id": 12,
+      "file_name": "images/svg-naturalistic/06-red-distractor.svg",
+      "width": 720,
+      "height": 480
+    }
+  ],
+  "annotations": [
+    {
+      "id": 1,
+      "image_id": 1,
+      "category_id": 1,
+      "bbox": [
+        350,
+        141,
+        57,
+        34
+      ],
+      "area": 969.0,
+      "iscrowd": 0,
+      "geometry_source": "exact_svg_geometry",
+      "mask_svg": "images/svg/masks/01-reference-bill.svg",
+      "area_method": "analytic primitive or polygon area"
+    },
+    {
+      "id": 2,
+      "image_id": 1,
+      "category_id": 2,
+      "bbox": [
+        278,
+        102,
+        62,
+        26
+      ],
+      "area": 1266.0618393966865,
+      "iscrowd": 0,
+      "geometry_source": "exact_svg_geometry",
+      "mask_svg": "images/svg/masks/01-reference-crown.svg",
+      "area_method": "analytic primitive or polygon area"
+    },
+    {
+      "id": 3,
+      "image_id": 1,
+      "category_id": 3,
+      "bbox": [
+        168,
+        193,
+        140,
+        70
+      ],
+      "area": 7696.902001294993,
+      "iscrowd": 0,
+      "geometry_source": "exact_svg_geometry",
+      "mask_svg": "images/svg/masks/01-reference-wing.svg",
+      "area_method": "analytic primitive or polygon area"
+    },
+    {
+      "id": 4,
+      "image_id": 2,
+      "category_id": 2,
+      "bbox": [
+        278,
+        102,
+        62,
+        26
+      ],
+      "area": 1266.0618393966865,
+      "iscrowd": 0,
+      "geometry_source": "exact_svg_geometry",
+      "mask_svg": "images/svg/masks/02-neutral-bill-crown.svg",
+      "area_method": "analytic primitive or polygon area"
+    },
+    {
+      "id": 5,
+      "image_id": 2,
+      "category_id": 3,
+      "bbox": [
+        168,
+        193,
+        140,
+        70
+      ],
+      "area": 7696.902001294993,
+      "iscrowd": 0,
+      "geometry_source": "exact_svg_geometry",
+      "mask_svg": "images/svg/masks/02-neutral-bill-wing.svg",
+      "area_method": "analytic primitive or polygon area"
+    },
+    {
+      "id": 6,
+      "image_id": 3,
+      "category_id": 1,
+      "bbox": [
+        350,
+        141,
+        57,
+        34
+      ],
+      "area": 969.0,
+      "iscrowd": 0,
+      "geometry_source": "exact_svg_geometry",
+      "mask_svg": "images/svg/masks/03-neutral-crown-bill.svg",
+      "area_method": "analytic primitive or polygon area"
+    },
+    {
+      "id": 7,
+      "image_id": 3,
+      "category_id": 3,
+      "bbox": [
+        168,
+        193,
+        140,
+        70
+      ],
+      "area": 7696.902001294993,
+      "iscrowd": 0,
+      "geometry_source": "exact_svg_geometry",
+      "mask_svg": "images/svg/masks/03-neutral-crown-wing.svg",
+      "area_method": "analytic primitive or polygon area"
+    },
+    {
+      "id": 8,
+      "image_id": 4,
+      "category_id": 1,
+      "bbox": [
+        350,
+        141,
+        57,
+        34
+      ],
+      "area": 969.0,
+      "iscrowd": 0,
+      "geometry_source": "exact_svg_geometry",
+      "mask_svg": "images/svg/masks/04-neutral-wing-bill.svg",
+      "area_method": "analytic primitive or polygon area"
+    },
+    {
+      "id": 9,
+      "image_id": 4,
+      "category_id": 2,
+      "bbox": [
+        278,
+        102,
+        62,
+        26
+      ],
+      "area": 1266.0618393966865,
+      "iscrowd": 0,
+      "geometry_source": "exact_svg_geometry",
+      "mask_svg": "images/svg/masks/04-neutral-wing-crown.svg",
+      "area_method": "analytic primitive or polygon area"
+    },
+    {
+      "id": 10,
+      "image_id": 5,
+      "category_id": 1,
+      "bbox": [
+        422,
+        119,
+        57,
+        34
+      ],
+      "area": 969.0,
+      "iscrowd": 0,
+      "geometry_source": "exact_svg_geometry",
+      "mask_svg": "images/svg/masks/05-moved-bird-bill.svg",
+      "area_method": "analytic primitive or polygon area"
+    },
+    {
+      "id": 11,
+      "image_id": 5,
+      "category_id": 2,
+      "bbox": [
+        350,
+        80,
+        62,
+        26
+      ],
+      "area": 1266.0618393966865,
+      "iscrowd": 0,
+      "geometry_source": "exact_svg_geometry",
+      "mask_svg": "images/svg/masks/05-moved-bird-crown.svg",
+      "area_method": "analytic primitive or polygon area"
+    },
+    {
+      "id": 12,
+      "image_id": 5,
+      "category_id": 3,
+      "bbox": [
+        240,
+        171,
+        140,
+        70
+      ],
+      "area": 7696.902001294993,
+      "iscrowd": 0,
+      "geometry_source": "exact_svg_geometry",
+      "mask_svg": "images/svg/masks/05-moved-bird-wing.svg",
+      "area_method": "analytic primitive or polygon area"
+    },
+    {
+      "id": 13,
+      "image_id": 6,
+      "category_id": 1,
+      "bbox": [
+        350,
+        141,
+        57,
+        34
+      ],
+      "area": 969.0,
+      "iscrowd": 0,
+      "geometry_source": "exact_svg_geometry",
+      "mask_svg": "images/svg/masks/06-red-distractor-bill.svg",
+      "area_method": "analytic primitive or polygon area"
+    },
+    {
+      "id": 14,
+      "image_id": 6,
+      "category_id": 3,
+      "bbox": [
+        168,
+        193,
+        140,
+        70
+      ],
+      "area": 7696.902001294993,
+      "iscrowd": 0,
+      "geometry_source": "exact_svg_geometry",
+      "mask_svg": "images/svg/masks/06-red-distractor-wing.svg",
+      "area_method": "analytic primitive or polygon area"
+    },
+    {
+      "id": 15,
+      "image_id": 7,
+      "category_id": 1,
+      "bbox": [
+        470,
+        128,
+        46,
+        26
+      ],
+      "area": 641.199328613533,
+      "iscrowd": 0,
+      "geometry_source": "exact_svg_geometry",
+      "mask_svg": "images/svg-naturalistic/masks/01-reference-bill.svg",
+      "area_method": "Bezier sampling at 256 intervals per curve"
+    },
+    {
+      "id": 16,
+      "image_id": 7,
+      "category_id": 2,
+      "bbox": [
+        393,
+        82,
+        77,
+        51
+      ],
+      "area": 1977.7449760625605,
+      "iscrowd": 0,
+      "geometry_source": "exact_svg_geometry",
+      "mask_svg": "images/svg-naturalistic/masks/01-reference-crown.svg",
+      "area_method": "Bezier sampling at 256 intervals per curve"
+    },
+    {
+      "id": 17,
+      "image_id": 7,
+      "category_id": 3,
+      "bbox": [
+        266,
+        174,
+        157,
+        105
+      ],
+      "area": 12389.092699503755,
+      "iscrowd": 0,
+      "geometry_source": "exact_svg_geometry",
+      "mask_svg": "images/svg-naturalistic/masks/01-reference-wing.svg",
+      "area_method": "Bezier sampling at 256 intervals per curve"
+    },
+    {
+      "id": 18,
+      "image_id": 8,
+      "category_id": 2,
+      "bbox": [
+        393,
+        82,
+        77,
+        51
+      ],
+      "area": 1977.7449760625605,
+      "iscrowd": 0,
+      "geometry_source": "exact_svg_geometry",
+      "mask_svg": "images/svg-naturalistic/masks/02-neutral-bill-crown.svg",
+      "area_method": "Bezier sampling at 256 intervals per curve"
+    },
+    {
+      "id": 19,
+      "image_id": 8,
+      "category_id": 3,
+      "bbox": [
+        266,
+        174,
+        157,
+        105
+      ],
+      "area": 12389.092699503755,
+      "iscrowd": 0,
+      "geometry_source": "exact_svg_geometry",
+      "mask_svg": "images/svg-naturalistic/masks/02-neutral-bill-wing.svg",
+      "area_method": "Bezier sampling at 256 intervals per curve"
+    },
+    {
+      "id": 20,
+      "image_id": 9,
+      "category_id": 1,
+      "bbox": [
+        470,
+        128,
+        46,
+        26
+      ],
+      "area": 641.199328613533,
+      "iscrowd": 0,
+      "geometry_source": "exact_svg_geometry",
+      "mask_svg": "images/svg-naturalistic/masks/03-neutral-crown-bill.svg",
+      "area_method": "Bezier sampling at 256 intervals per curve"
+    },
+    {
+      "id": 21,
+      "image_id": 9,
+      "category_id": 3,
+      "bbox": [
+        266,
+        174,
+        157,
+        105
+      ],
+      "area": 12389.092699503755,
+      "iscrowd": 0,
+      "geometry_source": "exact_svg_geometry",
+      "mask_svg": "images/svg-naturalistic/masks/03-neutral-crown-wing.svg",
+      "area_method": "Bezier sampling at 256 intervals per curve"
+    },
+    {
+      "id": 22,
+      "image_id": 10,
+      "category_id": 1,
+      "bbox": [
+        470,
+        128,
+        46,
+        26
+      ],
+      "area": 641.199328613533,
+      "iscrowd": 0,
+      "geometry_source": "exact_svg_geometry",
+      "mask_svg": "images/svg-naturalistic/masks/04-neutral-wing-bill.svg",
+      "area_method": "Bezier sampling at 256 intervals per curve"
+    },
+    {
+      "id": 23,
+      "image_id": 10,
+      "category_id": 2,
+      "bbox": [
+        393,
+        82,
+        77,
+        51
+      ],
+      "area": 1977.7449760625605,
+      "iscrowd": 0,
+      "geometry_source": "exact_svg_geometry",
+      "mask_svg": "images/svg-naturalistic/masks/04-neutral-wing-crown.svg",
+      "area_method": "Bezier sampling at 256 intervals per curve"
+    },
+    {
+      "id": 24,
+      "image_id": 11,
+      "category_id": 1,
+      "bbox": [
+        532,
+        104,
+        46,
+        26
+      ],
+      "area": 641.199328613533,
+      "iscrowd": 0,
+      "geometry_source": "exact_svg_geometry",
+      "mask_svg": "images/svg-naturalistic/masks/05-moved-bird-bill.svg",
+      "area_method": "Bezier sampling at 256 intervals per curve"
+    },
+    {
+      "id": 25,
+      "image_id": 11,
+      "category_id": 2,
+      "bbox": [
+        455,
+        58,
+        77,
+        51
+      ],
+      "area": 1977.7449760625605,
+      "iscrowd": 0,
+      "geometry_source": "exact_svg_geometry",
+      "mask_svg": "images/svg-naturalistic/masks/05-moved-bird-crown.svg",
+      "area_method": "Bezier sampling at 256 intervals per curve"
+    },
+    {
+      "id": 26,
+      "image_id": 11,
+      "category_id": 3,
+      "bbox": [
+        328,
+        150,
+        157,
+        105
+      ],
+      "area": 12389.092699503755,
+      "iscrowd": 0,
+      "geometry_source": "exact_svg_geometry",
+      "mask_svg": "images/svg-naturalistic/masks/05-moved-bird-wing.svg",
+      "area_method": "Bezier sampling at 256 intervals per curve"
+    },
+    {
+      "id": 27,
+      "image_id": 12,
+      "category_id": 1,
+      "bbox": [
+        470,
+        128,
+        46,
+        26
+      ],
+      "area": 641.199328613533,
+      "iscrowd": 0,
+      "geometry_source": "exact_svg_geometry",
+      "mask_svg": "images/svg-naturalistic/masks/06-red-distractor-bill.svg",
+      "area_method": "Bezier sampling at 256 intervals per curve"
+    },
+    {
+      "id": 28,
+      "image_id": 12,
+      "category_id": 3,
+      "bbox": [
+        266,
+        174,
+        157,
+        105
+      ],
+      "area": 12389.092699503755,
+      "iscrowd": 0,
+      "geometry_source": "exact_svg_geometry",
+      "mask_svg": "images/svg-naturalistic/masks/06-red-distractor-wing.svg",
+      "area_method": "Bezier sampling at 256 intervals per curve"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "yellow_bill"
+    },
+    {
+      "id": 2,
+      "name": "red_crown_patch"
+    },
+    {
+      "id": 3,
+      "name": "blue_wing_patch"
+    }
+  ]
+}

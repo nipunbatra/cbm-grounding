@@ -1,0 +1,42 @@
+[
+  {
+    "image_id": 5147,
+    "mirror_class_id": 5,
+    "original_url": "https://huggingface.co/datasets/kforghani/flowers-102/resolve/4693636dc25149528f13fd6d476650a457bfdf30/test/5/image_05147.jpg",
+    "local_path": "images/flowers/image_05147.jpg",
+    "sha256": "1584b9082b71b255e69937be85e779ed887738460ec851ced62555c2bfb6ccaf",
+    "bytes": 29715
+  },
+  {
+    "image_id": 6395,
+    "mirror_class_id": 9,
+    "original_url": "https://huggingface.co/datasets/kforghani/flowers-102/resolve/4693636dc25149528f13fd6d476650a457bfdf30/test/9/image_06395.jpg",
+    "local_path": "images/flowers/image_06395.jpg",
+    "sha256": "8a87674e0b4f611d22e58ff295518381089fe083ed345568bb8abdb8cf771419",
+    "bytes": 61461
+  },
+  {
+    "image_id": 3828,
+    "mirror_class_id": 17,
+    "original_url": "https://huggingface.co/datasets/kforghani/flowers-102/resolve/4693636dc25149528f13fd6d476650a457bfdf30/test/17/image_03828.jpg",
+    "local_path": "images/flowers/image_03828.jpg",
+    "sha256": "739e067740dfcefb51f2a2bccbd60360d32c7418048c84db8715513f48039521",
+    "bytes": 53817
+  },
+  {
+    "image_id": 6198,
+    "mirror_class_id": 49,
+    "original_url": "https://huggingface.co/datasets/kforghani/flowers-102/resolve/4693636dc25149528f13fd6d476650a457bfdf30/test/49/image_06198.jpg",
+    "local_path": "images/flowers/image_06198.jpg",
+    "sha256": "795598957708dc950153ea34eeb10442f0ac8f4a08a5cc640e7a77bac05cb86a",
+    "bytes": 30301
+  },
+  {
+    "image_id": 5399,
+    "mirror_class_id": 54,
+    "original_url": "https://huggingface.co/datasets/kforghani/flowers-102/resolve/4693636dc25149528f13fd6d476650a457bfdf30/test/54/image_05399.jpg",
+    "local_path": "images/flowers/image_05399.jpg",
+    "sha256": "d3483718d0e9ceab942b4d30d687ee19a8315358a71c3ba4e171c5f9247d1de8",
+    "bytes": 46453
+  }
+]

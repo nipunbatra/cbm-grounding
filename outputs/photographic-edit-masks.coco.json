@@ -1,0 +1,283 @@
+{
+  "info": {
+    "description": "Exact authored photo-recoloring mask boxes. Anatomical fit is approximate, not independently validated part segmentation."
+  },
+  "images": [
+    {
+      "id": 1,
+      "file_name": "images/svg-photographic/01-reference.svg",
+      "width": 400,
+      "height": 500
+    },
+    {
+      "id": 2,
+      "file_name": "images/svg-photographic/02-neutral-bill.svg",
+      "width": 400,
+      "height": 500
+    },
+    {
+      "id": 3,
+      "file_name": "images/svg-photographic/03-neutral-crown.svg",
+      "width": 400,
+      "height": 500
+    },
+    {
+      "id": 4,
+      "file_name": "images/svg-photographic/04-neutral-wing.svg",
+      "width": 400,
+      "height": 500
+    },
+    {
+      "id": 5,
+      "file_name": "images/svg-photographic/05-moved-photo.svg",
+      "width": 400,
+      "height": 500
+    },
+    {
+      "id": 6,
+      "file_name": "images/svg-photographic/06-red-distractor.svg",
+      "width": 400,
+      "height": 500
+    }
+  ],
+  "annotations": [
+    {
+      "id": 1,
+      "image_id": 1,
+      "category_id": 1,
+      "bbox": [
+        249,
+        109,
+        31,
+        22
+      ],
+      "area": 415.0,
+      "iscrowd": 0,
+      "geometry_source": "exact_authored_recoloring_mask",
+      "mask_svg": "images/svg-photographic/masks/01-reference-bill.svg",
+      "area_method": "analytic primitive or polygon area"
+    },
+    {
+      "id": 2,
+      "image_id": 1,
+      "category_id": 2,
+      "bbox": [
+        202,
+        90,
+        65,
+        21
+      ],
+      "area": 795.5,
+      "iscrowd": 0,
+      "geometry_source": "exact_authored_recoloring_mask",
+      "mask_svg": "images/svg-photographic/masks/01-reference-crown.svg",
+      "area_method": "analytic primitive or polygon area"
+    },
+    {
+      "id": 3,
+      "image_id": 1,
+      "category_id": 3,
+      "bbox": [
+        120,
+        171,
+        155,
+        123
+      ],
+      "area": 9064.5,
+      "iscrowd": 0,
+      "geometry_source": "exact_authored_recoloring_mask",
+      "mask_svg": "images/svg-photographic/masks/01-reference-wing.svg",
+      "area_method": "analytic primitive or polygon area"
+    },
+    {
+      "id": 4,
+      "image_id": 2,
+      "category_id": 2,
+      "bbox": [
+        202,
+        90,
+        65,
+        21
+      ],
+      "area": 795.5,
+      "iscrowd": 0,
+      "geometry_source": "exact_authored_recoloring_mask",
+      "mask_svg": "images/svg-photographic/masks/02-neutral-bill-crown.svg",
+      "area_method": "analytic primitive or polygon area"
+    },
+    {
+      "id": 5,
+      "image_id": 2,
+      "category_id": 3,
+      "bbox": [
+        120,
+        171,
+        155,
+        123
+      ],
+      "area": 9064.5,
+      "iscrowd": 0,
+      "geometry_source": "exact_authored_recoloring_mask",
+      "mask_svg": "images/svg-photographic/masks/02-neutral-bill-wing.svg",
+      "area_method": "analytic primitive or polygon area"
+    },
+    {
+      "id": 6,
+      "image_id": 3,
+      "category_id": 1,
+      "bbox": [
+        249,
+        109,
+        31,
+        22
+      ],
+      "area": 415.0,
+      "iscrowd": 0,
+      "geometry_source": "exact_authored_recoloring_mask",
+      "mask_svg": "images/svg-photographic/masks/03-neutral-crown-bill.svg",
+      "area_method": "analytic primitive or polygon area"
+    },
+    {
+      "id": 7,
+      "image_id": 3,
+      "category_id": 3,
+      "bbox": [
+        120,
+        171,
+        155,
+        123
+      ],
+      "area": 9064.5,
+      "iscrowd": 0,
+      "geometry_source": "exact_authored_recoloring_mask",
+      "mask_svg": "images/svg-photographic/masks/03-neutral-crown-wing.svg",
+      "area_method": "analytic primitive or polygon area"
+    },
+    {
+      "id": 8,
+      "image_id": 4,
+      "category_id": 1,
+      "bbox": [
+        249,
+        109,
+        31,
+        22
+      ],
+      "area": 415.0,
+      "iscrowd": 0,
+      "geometry_source": "exact_authored_recoloring_mask",
+      "mask_svg": "images/svg-photographic/masks/04-neutral-wing-bill.svg",
+      "area_method": "analytic primitive or polygon area"
+    },
+    {
+      "id": 9,
+      "image_id": 4,
+      "category_id": 2,
+      "bbox": [
+        202,
+        90,
+        65,
+        21
+      ],
+      "area": 795.5,
+      "iscrowd": 0,
+      "geometry_source": "exact_authored_recoloring_mask",
+      "mask_svg": "images/svg-photographic/masks/04-neutral-wing-crown.svg",
+      "area_method": "analytic primitive or polygon area"
+    },
+    {
+      "id": 10,
+      "image_id": 5,
+      "category_id": 1,
+      "bbox": [
+        279,
+        89,
+        31,
+        22
+      ],
+      "area": 415.0,
+      "iscrowd": 0,
+      "geometry_source": "exact_authored_recoloring_mask",
+      "mask_svg": "images/svg-photographic/masks/05-moved-photo-bill.svg",
+      "area_method": "analytic primitive or polygon area"
+    },
+    {
+      "id": 11,
+      "image_id": 5,
+      "category_id": 2,
+      "bbox": [
+        232,
+        70,
+        65,
+        21
+      ],
+      "area": 795.5,
+      "iscrowd": 0,
+      "geometry_source": "exact_authored_recoloring_mask",
+      "mask_svg": "images/svg-photographic/masks/05-moved-photo-crown.svg",
+      "area_method": "analytic primitive or polygon area"
+    },
+    {
+      "id": 12,
+      "image_id": 5,
+      "category_id": 3,
+      "bbox": [
+        150,
+        151,
+        155,
+        123
+      ],
+      "area": 9064.5,
+      "iscrowd": 0,
+      "geometry_source": "exact_authored_recoloring_mask",
+      "mask_svg": "images/svg-photographic/masks/05-moved-photo-wing.svg",
+      "area_method": "analytic primitive or polygon area"
+    },
+    {
+      "id": 13,
+      "image_id": 6,
+      "category_id": 1,
+      "bbox": [
+        249,
+        109,
+        31,
+        22
+      ],
+      "area": 415.0,
+      "iscrowd": 0,
+      "geometry_source": "exact_authored_recoloring_mask",
+      "mask_svg": "images/svg-photographic/masks/06-red-distractor-bill.svg",
+      "area_method": "analytic primitive or polygon area"
+    },
+    {
+      "id": 14,
+      "image_id": 6,
+      "category_id": 3,
+      "bbox": [
+        120,
+        171,
+        155,
+        123
+      ],
+      "area": 9064.5,
+      "iscrowd": 0,
+      "geometry_source": "exact_authored_recoloring_mask",
+      "mask_svg": "images/svg-photographic/masks/06-red-distractor-wing.svg",
+      "area_method": "analytic primitive or polygon area"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "yellow_bill"
+    },
+    {
+      "id": 2,
+      "name": "red_crown_patch"
+    },
+    {
+      "id": 3,
+      "name": "blue_wing_patch"
+    }
+  ]
+}

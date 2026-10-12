@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "checks": 16113,
+  "cub_images": 10,
+  "cub_attributes": 3120,
+  "pure_vector_images": 12,
+  "photographic_svg_images": 6,
+  "flower_images": 5,
+  "assistant_concept_scores": 40,
+  "exact_vector_positive_boxes": 28,
+  "exact_photo_edit_boxes": 14,
+  "limitations": [
+    "No CUB concept ground-truth boxes",
+    "Photo edit mask anatomy is approximate",
+    "Assistant flower annotations are subjective and uncalibrated",
+    "No trained classifier",
+    "Selected teaching subset; no performance estimate"
+  ],
+  "checks_summary": [
+    "Pinned source SHA-256 integrity",
+    "Original per-image labels and certainty",
+    "Native part IDs checked against names",
+    "Unknown versus absent handling",
+    "Clipped and explicitly marked proxies",
+    "SVG boxes independently derived from XML primitives",
+    "Mask presence and geometry",
+    "Single-concept edits, translation and distractor pairs",
+    "Synthetic-only COCO export"
+  ]
+}

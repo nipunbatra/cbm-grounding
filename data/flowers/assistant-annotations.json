@@ -1,0 +1,694 @@
+{
+  "annotation_author": "Codex assistant",
+  "annotation_date": "2026-10-12",
+  "method": "Every image was opened with view_image and visually inspected by this assistant. Values and boxes below were then hand-authored by the assistant; no trained classifier or object detector was run.",
+  "vocabulary": [
+    {
+      "id": "yellow_petals",
+      "name": "yellow_petals",
+      "label": "Yellow petals",
+      "definition": "Yellow petal or ray-floret tissue is clearly visible; yellow centres alone do not count."
+    },
+    {
+      "id": "white_petals",
+      "name": "white_petals",
+      "label": "White petals",
+      "definition": "White or near-white petal/ray-floret tissue is visible, rather than only specular highlights."
+    },
+    {
+      "id": "purple_pink_petals",
+      "name": "purple_pink_petals",
+      "label": "Purple / pink petals",
+      "definition": "Purple, lavender, or pink petal-like tissue is visible."
+    },
+    {
+      "id": "dark_centre",
+      "name": "dark_centre",
+      "label": "Dark flower centre",
+      "definition": "A distinct dark brown, black, or deep red central disk/cone is visible; shadows inside a tubular flower do not count."
+    },
+    {
+      "id": "yellow_centre",
+      "name": "yellow_centre",
+      "label": "Yellow flower centre",
+      "definition": "A distinct predominantly yellow central disk is visible, independently of the outer petals."
+    },
+    {
+      "id": "green_leaf",
+      "name": "green_leaf",
+      "label": "Recognizable green leaf",
+      "definition": "At least one green leaf can be visually distinguished from undifferentiated background vegetation."
+    },
+    {
+      "id": "multiple_blooms",
+      "name": "multiple_blooms",
+      "label": "Multiple flower heads",
+      "definition": "At least two identifiable flower heads are visible, including partial heads when unambiguous; buds alone do not count."
+    },
+    {
+      "id": "insect",
+      "name": "insect",
+      "label": "Visible insect",
+      "definition": "A visually recognizable insect is present; an ambiguous brown mark is not a confident positive."
+    }
+  ],
+  "images": [
+    {
+      "image_id": 5147,
+      "image_size": [
+        500,
+        500
+      ],
+      "note": "One yellow English marigold with a dark centre. The original embedded photographer watermark is preserved. Background vegetation is blurred.",
+      "concepts": [
+        {
+          "id": "yellow_petals",
+          "score": 0.99,
+          "present": 1,
+          "observable": true,
+          "boxes": [
+            [
+              0,
+              20,
+              500,
+              480
+            ]
+          ],
+          "note": "The large box encloses the petal support and also the central disk; it is not a petal mask.",
+          "assessment": "present"
+        },
+        {
+          "id": "white_petals",
+          "score": 0.02,
+          "present": 0,
+          "observable": true,
+          "boxes": [],
+          "note": "The white lettering is a watermark, not a white petal.",
+          "assessment": "absent"
+        },
+        {
+          "id": "purple_pink_petals",
+          "score": 0.02,
+          "present": 0,
+          "observable": true,
+          "boxes": [],
+          "note": "No purple or pink petal tissue is visible.",
+          "assessment": "absent"
+        },
+        {
+          "id": "dark_centre",
+          "score": 0.99,
+          "present": 1,
+          "observable": true,
+          "boxes": [
+            [
+              201,
+              220,
+              139,
+              135
+            ]
+          ],
+          "note": "Dark red-brown central disk.",
+          "assessment": "present"
+        },
+        {
+          "id": "yellow_centre",
+          "score": 0.05,
+          "present": 0,
+          "observable": true,
+          "boxes": [],
+          "note": "Yellow tissue surrounds a dark centre rather than forming a yellow disk.",
+          "assessment": "absent"
+        },
+        {
+          "id": "green_leaf",
+          "score": 0.4,
+          "present": 0,
+          "observable": false,
+          "boxes": [],
+          "note": "Green background is visible, but distinct leaf boundaries are too blurred for a confident box.",
+          "assessment": "uncertain"
+        },
+        {
+          "id": "multiple_blooms",
+          "score": 0.03,
+          "present": 0,
+          "observable": true,
+          "boxes": [],
+          "note": "Only one flower head is identifiable in this crop.",
+          "assessment": "absent"
+        },
+        {
+          "id": "insect",
+          "score": 0.03,
+          "present": 0,
+          "observable": true,
+          "boxes": [],
+          "note": "No recognizable insect is visible.",
+          "assessment": "absent"
+        }
+      ]
+    },
+    {
+      "image_id": 6395,
+      "image_size": [
+        500,
+        815
+      ],
+      "note": "Purple monkshood blossoms on a green stalk. Boxes mark selected visible supports, not an exhaustive instance segmentation.",
+      "concepts": [
+        {
+          "id": "yellow_petals",
+          "score": 0.02,
+          "present": 0,
+          "observable": true,
+          "boxes": [],
+          "note": "No yellow petals are visible.",
+          "assessment": "absent"
+        },
+        {
+          "id": "white_petals",
+          "score": 0.06,
+          "present": 0,
+          "observable": true,
+          "boxes": [],
+          "note": "Light highlights remain part of purple petals.",
+          "assessment": "absent"
+        },
+        {
+          "id": "purple_pink_petals",
+          "score": 0.99,
+          "present": 1,
+          "observable": true,
+          "boxes": [
+            [
+              62,
+              118,
+              118,
+              213
+            ],
+            [
+              249,
+              144,
+              183,
+              226
+            ],
+            [
+              8,
+              296,
+              151,
+              240
+            ],
+            [
+              145,
+              255,
+              105,
+              224
+            ],
+            [
+              59,
+              480,
+              177,
+              272
+            ],
+            [
+              326,
+              577,
+              168,
+              232
+            ]
+          ],
+          "note": "Approximate boxes around six visibly purple blossoms; some overlap because blooms overlap.",
+          "assessment": "present"
+        },
+        {
+          "id": "dark_centre",
+          "score": 0.08,
+          "present": 0,
+          "observable": true,
+          "boxes": [],
+          "note": "Dark flower openings are visible, but there is no disk or cone of the defined type.",
+          "assessment": "absent"
+        },
+        {
+          "id": "yellow_centre",
+          "score": 0.03,
+          "present": 0,
+          "observable": true,
+          "boxes": [],
+          "note": "No distinct yellow disk is visible.",
+          "assessment": "absent"
+        },
+        {
+          "id": "green_leaf",
+          "score": 0.88,
+          "present": 1,
+          "observable": true,
+          "boxes": [
+            [
+              0,
+              543,
+              111,
+              103
+            ]
+          ],
+          "note": "Partly cropped green leaf at the left edge, below the middle blossoms.",
+          "assessment": "present"
+        },
+        {
+          "id": "multiple_blooms",
+          "score": 0.99,
+          "present": 1,
+          "observable": true,
+          "boxes": [
+            [
+              62,
+              118,
+              118,
+              213
+            ],
+            [
+              249,
+              144,
+              183,
+              226
+            ],
+            [
+              8,
+              296,
+              151,
+              240
+            ],
+            [
+              59,
+              480,
+              177,
+              272
+            ],
+            [
+              326,
+              577,
+              168,
+              232
+            ]
+          ],
+          "note": "Five illustrative flower-head supports make multiplicity clear; not an exhaustive flower count.",
+          "assessment": "present"
+        },
+        {
+          "id": "insect",
+          "score": 0.14,
+          "present": 0,
+          "observable": false,
+          "boxes": [],
+          "note": "Dark marks in flower throats are too small to distinguish an insect reliably.",
+          "assessment": "uncertain"
+        }
+      ]
+    },
+    {
+      "image_id": 3828,
+      "image_size": [
+        666,
+        500
+      ],
+      "note": "A large pink coneflower, smaller flowers, and a visible bee-like insect. Class identity comes from the official dataset; concept judgments are newly authored here.",
+      "concepts": [
+        {
+          "id": "yellow_petals",
+          "score": 0.02,
+          "present": 0,
+          "observable": true,
+          "boxes": [],
+          "note": "No clearly yellow petals are visible.",
+          "assessment": "absent"
+        },
+        {
+          "id": "white_petals",
+          "score": 0.8,
+          "present": 1,
+          "observable": true,
+          "boxes": [
+            [
+              0,
+              369,
+              171,
+              131
+            ]
+          ],
+          "note": "The small bottom-left flower has near-white petals with a faint lavender cast.",
+          "assessment": "present"
+        },
+        {
+          "id": "purple_pink_petals",
+          "score": 0.99,
+          "present": 1,
+          "observable": true,
+          "boxes": [
+            [
+              154,
+              121,
+              392,
+              259
+            ],
+            [
+              196,
+              333,
+              182,
+              166
+            ]
+          ],
+          "note": "Main pink ray-florets plus the partly cropped lower flower; boxes include intervening background.",
+          "assessment": "present"
+        },
+        {
+          "id": "dark_centre",
+          "score": 0.98,
+          "present": 1,
+          "observable": true,
+          "boxes": [
+            [
+              288,
+              78,
+              135,
+              107
+            ],
+            [
+              242,
+              414,
+              92,
+              63
+            ],
+            [
+              55,
+              402,
+              71,
+              37
+            ]
+          ],
+          "note": "Red-brown central cones/disks. The large cone has bright red upper tissue and a dark lower region.",
+          "assessment": "present"
+        },
+        {
+          "id": "yellow_centre",
+          "score": 0.07,
+          "present": 0,
+          "observable": true,
+          "boxes": [],
+          "note": "The visible flower centres are red-brown rather than predominantly yellow.",
+          "assessment": "absent"
+        },
+        {
+          "id": "green_leaf",
+          "score": 0.95,
+          "present": 1,
+          "observable": true,
+          "boxes": [
+            [
+              560,
+              210,
+              91,
+              85
+            ],
+            [
+              84,
+              128,
+              78,
+              86
+            ]
+          ],
+          "note": "Examples of recognizable green leaves in the surrounding vegetation.",
+          "assessment": "present"
+        },
+        {
+          "id": "multiple_blooms",
+          "score": 0.99,
+          "present": 1,
+          "observable": true,
+          "boxes": [
+            [
+              154,
+              78,
+              393,
+              302
+            ],
+            [
+              0,
+              369,
+              171,
+              131
+            ],
+            [
+              195,
+              332,
+              185,
+              168
+            ]
+          ],
+          "note": "At least three identifiable flower heads are visible.",
+          "assessment": "present"
+        },
+        {
+          "id": "insect",
+          "score": 0.96,
+          "present": 1,
+          "observable": true,
+          "boxes": [
+            [
+              327,
+              109,
+              73,
+              58
+            ]
+          ],
+          "note": "Bee-like insect on the upper front of the main cone. This is an insect annotation, not a species label.",
+          "assessment": "present"
+        }
+      ]
+    },
+    {
+      "image_id": 6198,
+      "image_size": [
+        752,
+        500
+      ],
+      "note": "White oxeye daisy with a yellow central disk. Some objects are cut off at the top edge and a brown mark near the disk is ambiguous.",
+      "concepts": [
+        {
+          "id": "yellow_petals",
+          "score": 0.06,
+          "present": 0,
+          "observable": true,
+          "boxes": [],
+          "note": "The yellow region is a centre, while the outer petals are white.",
+          "assessment": "absent"
+        },
+        {
+          "id": "white_petals",
+          "score": 0.99,
+          "present": 1,
+          "observable": true,
+          "boxes": [
+            [
+              148,
+              10,
+              485,
+              478
+            ]
+          ],
+          "note": "Box enclosing the white-petal support; it also contains the central disk.",
+          "assessment": "present"
+        },
+        {
+          "id": "purple_pink_petals",
+          "score": 0.02,
+          "present": 0,
+          "observable": true,
+          "boxes": [],
+          "note": "No purple or pink petals are visible.",
+          "assessment": "absent"
+        },
+        {
+          "id": "dark_centre",
+          "score": 0.04,
+          "present": 0,
+          "observable": true,
+          "boxes": [],
+          "note": "The central disk is yellow. The brown patch beside it does not make the centre dark.",
+          "assessment": "absent"
+        },
+        {
+          "id": "yellow_centre",
+          "score": 0.99,
+          "present": 1,
+          "observable": true,
+          "boxes": [
+            [
+              326,
+              187,
+              119,
+              125
+            ]
+          ],
+          "note": "The yellow central disk is visually distinct.",
+          "assessment": "present"
+        },
+        {
+          "id": "green_leaf",
+          "score": 0.87,
+          "present": 1,
+          "observable": true,
+          "boxes": [
+            [
+              51,
+              274,
+              123,
+              104
+            ]
+          ],
+          "note": "Dark green leaf to the lower left of the flower.",
+          "assessment": "present"
+        },
+        {
+          "id": "multiple_blooms",
+          "score": 0.28,
+          "present": 0,
+          "observable": false,
+          "boxes": [],
+          "note": "Pale fragments at the top border may belong to other flowers, but do not identify another head confidently.",
+          "assessment": "uncertain"
+        },
+        {
+          "id": "insect",
+          "score": 0.4,
+          "present": 0,
+          "observable": false,
+          "boxes": [],
+          "note": "The small brown object at approximately (350,305) could be debris or an insect; no insect box is asserted.",
+          "assessment": "uncertain"
+        }
+      ]
+    },
+    {
+      "image_id": 5399,
+      "image_size": [
+        500,
+        514
+      ],
+      "note": "Large sunflower with yellow petals, a dark seed disk, and green leaves. Blurred yellow background objects are deliberately treated as uncertain flower heads.",
+      "concepts": [
+        {
+          "id": "yellow_petals",
+          "score": 0.99,
+          "present": 1,
+          "observable": true,
+          "boxes": [
+            [
+              44,
+              18,
+              433,
+              466
+            ]
+          ],
+          "note": "Approximate support around the outer yellow petals; includes the disk and some gaps.",
+          "assessment": "present"
+        },
+        {
+          "id": "white_petals",
+          "score": 0.02,
+          "present": 0,
+          "observable": true,
+          "boxes": [],
+          "note": "No white petals are visible.",
+          "assessment": "absent"
+        },
+        {
+          "id": "purple_pink_petals",
+          "score": 0.01,
+          "present": 0,
+          "observable": true,
+          "boxes": [],
+          "note": "No purple or pink petals are visible.",
+          "assessment": "absent"
+        },
+        {
+          "id": "dark_centre",
+          "score": 0.99,
+          "present": 1,
+          "observable": true,
+          "boxes": [
+            [
+              117,
+              116,
+              238,
+              247
+            ]
+          ],
+          "note": "Broad brown central disk; the edge contains yellow-green detail.",
+          "assessment": "present"
+        },
+        {
+          "id": "yellow_centre",
+          "score": 0.16,
+          "present": 0,
+          "observable": true,
+          "boxes": [],
+          "note": "Some edge detail is yellow-green, but the disk is predominantly dark brown.",
+          "assessment": "absent"
+        },
+        {
+          "id": "green_leaf",
+          "score": 0.99,
+          "present": 1,
+          "observable": true,
+          "boxes": [
+            [
+              256,
+              422,
+              243,
+              92
+            ],
+            [
+              165,
+              0,
+              115,
+              103
+            ],
+            [
+              0,
+              141,
+              90,
+              154
+            ],
+            [
+              363,
+              88,
+              137,
+              122
+            ]
+          ],
+          "note": "Four visible leaf supports, including leaves truncated by the image boundary.",
+          "assessment": "present"
+        },
+        {
+          "id": "multiple_blooms",
+          "score": 0.43,
+          "present": 0,
+          "observable": false,
+          "boxes": [],
+          "note": "Yellow bokeh in the background suggests other flowers, but their heads cannot be bounded confidently.",
+          "assessment": "uncertain"
+        },
+        {
+          "id": "insect",
+          "score": 0.03,
+          "present": 0,
+          "observable": true,
+          "boxes": [],
+          "note": "No recognizable insect is visible.",
+          "assessment": "absent"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "dataset": "CUB-200-2011",
+  "official_url": "https://www.vision.caltech.edu/datasets/cub_200_2011/",
+  "mirror": "pawlo2013/CUB",
+  "mirror_revision": "8a8486039c718e33d87b96ed42c0f457e6a7d939",
+  "selection": "Two official-training images per named species, sorted by visible bill/breast/crown/forehead/throat, then wing visibility, then image ID. Selected for teaching; not an evaluation sample.",
+  "selected_image_ids": [
+    898,
+    900,
+    1994,
+    2002,
+    2651,
+    2654,
+    4197,
+    4199,
+    11731,
+    11732
+  ],
+  "retrieved_on": "2026-10-12",
+  "files": [
+    {
+      "path": "data/cub/raw/images.txt",
+      "url": "https://huggingface.co/datasets/pawlo2013/CUB/resolve/8a8486039c718e33d87b96ed42c0f457e6a7d939/CUB_200_2011/images.txt",
+      "source_sha256": "e1cfc5ed1f4bd1b838040784b6f75c44f7a25d9b31707a3adab49ec694618c1f",
+      "saved_sha256": "f726c3b036c3eb078de4843149e140348cd2c1f6cd68ee0602ddcc4a3d2f1969",
+      "subset_by_image_id": true
+    },
+    {
+      "path": "data/cub/raw/classes.txt",
+      "url": "https://huggingface.co/datasets/pawlo2013/CUB/resolve/8a8486039c718e33d87b96ed42c0f457e6a7d939/CUB_200_2011/classes.txt",
+      "source_sha256": "66a884364a73edde6c71eeb7fd5d8bb791e80979b64759bd6a5d5d209bdc02ba",
+      "saved_sha256": "66a884364a73edde6c71eeb7fd5d8bb791e80979b64759bd6a5d5d209bdc02ba",
+      "subset_by_image_id": false
+    },
+    {
+      "path": "data/cub/raw/image_class_labels.txt",
+      "url": "https://huggingface.co/datasets/pawlo2013/CUB/resolve/8a8486039c718e33d87b96ed42c0f457e6a7d939/CUB_200_2011/image_class_labels.txt",
+      "source_sha256": "e9df8c96d897994a245746fe2c98914b9b31f5342bddc6e8b06bdfbf45e49b02",
+      "saved_sha256": "b0e5d4988f8f08024c3a86fed758275f8e051dc494240ca4b5b967b82a0f283a",
+      "subset_by_image_id": true
+    },
+    {
+      "path": "data/cub/raw/train_test_split.txt",
+      "url": "https://huggingface.co/datasets/pawlo2013/CUB/resolve/8a8486039c718e33d87b96ed42c0f457e6a7d939/CUB_200_2011/train_test_split.txt",
+      "source_sha256": "8bbbfcc09b4d3c9c6e3e40c9874bd863eb6658f4f456e472df1b33d3403d2600",
+      "saved_sha256": "79c72b491a85fea2ebf5fb69ac51a82c4cd3d7553dbb59c5dfcb8d1f5b8ac96f",
+      "subset_by_image_id": true
+    },
+    {
+      "path": "data/cub/raw/bounding_boxes.txt",
+      "url": "https://huggingface.co/datasets/pawlo2013/CUB/resolve/8a8486039c718e33d87b96ed42c0f457e6a7d939/CUB_200_2011/bounding_boxes.txt",
+      "source_sha256": "c19d9f096c15564793408e5ba054b8d715a6805819d98f037c977f369ef4abd3",
+      "saved_sha256": "e6790d9809ca13fb7a26c962f8a72d37b0e6e6c582042a168fe7ccefb9a42303",
+      "subset_by_image_id": true
+    },
+    {
+      "path": "data/cub/raw/parts/parts.txt",
+      "url": "https://huggingface.co/datasets/pawlo2013/CUB/resolve/8a8486039c718e33d87b96ed42c0f457e6a7d939/CUB_200_2011/parts/parts.txt",
+      "source_sha256": "411a4ab5c7622c1b93bf84dd1e9f69a8a2feaecd79753ed13cfc27ec0c2aeef0",
+      "saved_sha256": "411a4ab5c7622c1b93bf84dd1e9f69a8a2feaecd79753ed13cfc27ec0c2aeef0",
+      "subset_by_image_id": false
+    },
+    {
+      "path": "data/cub/raw/parts/part_locs.txt",
+      "url": "https://huggingface.co/datasets/pawlo2013/CUB/resolve/8a8486039c718e33d87b96ed42c0f457e6a7d939/CUB_200_2011/parts/part_locs.txt",
+      "source_sha256": "5be41e1e1e9165ff19632da203e30384fe8a359347c545ffc12ab99155b0415f",
+      "saved_sha256": "7be10a6a538121160b9bde9a49764e5368b1266fd21102728d450a23dd97a493",
+      "subset_by_image_id": true
+    },
+    {
+      "path": "data/cub/raw/attributes/certainties.txt",
+      "url": "https://huggingface.co/datasets/pawlo2013/CUB/resolve/8a8486039c718e33d87b96ed42c0f457e6a7d939/CUB_200_2011/attributes/certainties.txt",
+      "source_sha256": "219c52fbf28945796b0dda505765754c5f7116e883f911366ee11fb0e7714984",
+      "saved_sha256": "219c52fbf28945796b0dda505765754c5f7116e883f911366ee11fb0e7714984",
+      "subset_by_image_id": false
+    },
+    {
+      "path": "data/cub/raw/attributes/image_attribute_labels.txt",
+      "url": "https://huggingface.co/datasets/pawlo2013/CUB/resolve/8a8486039c718e33d87b96ed42c0f457e6a7d939/CUB_200_2011/attributes/image_attribute_labels.txt",
+      "source_sha256": "5ebb9782d589f41a9c046bc7c5b1365e01839308e7cf88cbe83c0fb6d5362d98",
+      "saved_sha256": "ace5901c7cbb8cdd3c7731554e54e626427249e391aa913f51ad4fcf3d06645c",
+      "subset_by_image_id": true
+    },
+    {
+      "path": "data/cub/raw/README",
+      "url": "https://huggingface.co/datasets/pawlo2013/CUB/resolve/8a8486039c718e33d87b96ed42c0f457e6a7d939/CUB_200_2011/README",
+      "source_sha256": "561ab3afb035368f4fc369b249740326a476085933854e55ba1e6e5e98fecd15",
+      "saved_sha256": "561ab3afb035368f4fc369b249740326a476085933854e55ba1e6e5e98fecd15",
+      "subset_by_image_id": false
+    },
+    {
+      "path": "data/cub/raw/attributes.txt",
+      "url": "https://huggingface.co/datasets/pawlo2013/CUB/resolve/8a8486039c718e33d87b96ed42c0f457e6a7d939/attributes.txt",
+      "source_sha256": "d5b158c197a8548071114150b2384c55cbd8881b32e57816c6ccc1437e946a1a",
+      "saved_sha256": "d5b158c197a8548071114150b2384c55cbd8881b32e57816c6ccc1437e946a1a",
+      "subset_by_image_id": false
+    },
+    {
+      "path": "images/cub/017.Cardinal/Cardinal_0085_19162.jpg",
+      "url": "https://huggingface.co/datasets/pawlo2013/CUB/resolve/8a8486039c718e33d87b96ed42c0f457e6a7d939/CUB_200_2011/images/017.Cardinal/Cardinal_0085_19162.jpg",
+      "sha256": "1735f4433dc85c1fa26efaef3d62ce6e68653979036c6b05ee888b99115a4d49"
+    },
+    {
+      "path": "images/cub/017.Cardinal/Cardinal_0094_17165.jpg",
+      "url": "https://huggingface.co/datasets/pawlo2013/CUB/resolve/8a8486039c718e33d87b96ed42c0f457e6a7d939/CUB_200_2011/images/017.Cardinal/Cardinal_0094_17165.jpg",
+      "sha256": "fb117a5329700e32255388ea48a31b6e4e40449cd238dbf03ba4b949e521c396"
+    },
+    {
+      "path": "images/cub/036.Northern_Flicker/Northern_Flicker_0036_28681.jpg",
+      "url": "https://huggingface.co/datasets/pawlo2013/CUB/resolve/8a8486039c718e33d87b96ed42c0f457e6a7d939/CUB_200_2011/images/036.Northern_Flicker/Northern_Flicker_0036_28681.jpg",
+      "sha256": "203e048a88b1e2bc92504e96ea2fc8f3622fbf7ea4ba31e98f3aec6e4452417f"
+    },
+    {
+      "path": "images/cub/036.Northern_Flicker/Northern_Flicker_0050_28284.jpg",
+      "url": "https://huggingface.co/datasets/pawlo2013/CUB/resolve/8a8486039c718e33d87b96ed42c0f457e6a7d939/CUB_200_2011/images/036.Northern_Flicker/Northern_Flicker_0050_28284.jpg",
+      "sha256": "2286e967d73d6505e2d04d775ecaca894a9667b057b337a95e94807ee308c260"
+    },
+    {
+      "path": "images/cub/047.American_Goldfinch/American_Goldfinch_0017_32272.jpg",
+      "url": "https://huggingface.co/datasets/pawlo2013/CUB/resolve/8a8486039c718e33d87b96ed42c0f457e6a7d939/CUB_200_2011/images/047.American_Goldfinch/American_Goldfinch_0017_32272.jpg",
+      "sha256": "fb3d69b4233bf3e6d25ca1cd3d53f001da328062fc77e0b193c4daaf98a9bb5e"
+    },
+    {
+      "path": "images/cub/047.American_Goldfinch/American_Goldfinch_0133_32802.jpg",
+      "url": "https://huggingface.co/datasets/pawlo2013/CUB/resolve/8a8486039c718e33d87b96ed42c0f457e6a7d939/CUB_200_2011/images/047.American_Goldfinch/American_Goldfinch_0133_32802.jpg",
+      "sha256": "c0b70d3f9ef6453ab746de7bd3d1e47626c3ade648e9b39c5b0321445cbb0083"
+    },
+    {
+      "path": "images/cub/073.Blue_Jay/Blue_Jay_0015_62916.jpg",
+      "url": "https://huggingface.co/datasets/pawlo2013/CUB/resolve/8a8486039c718e33d87b96ed42c0f457e6a7d939/CUB_200_2011/images/073.Blue_Jay/Blue_Jay_0015_62916.jpg",
+      "sha256": "fdef68a3dd66d6c23f8bdb58047ca0116b08d69751eec8b8c2d289594cdc1ffb"
+    },
+    {
+      "path": "images/cub/073.Blue_Jay/Blue_Jay_0052_63148.jpg",
+      "url": "https://huggingface.co/datasets/pawlo2013/CUB/resolve/8a8486039c718e33d87b96ed42c0f457e6a7d939/CUB_200_2011/images/073.Blue_Jay/Blue_Jay_0052_63148.jpg",
+      "sha256": "02194920a0c0fc383a165886173aa3271a0b0b1ac620849bc1a7c2b44aff28db"
+    },
+    {
+      "path": "images/cub/200.Common_Yellowthroat/Common_Yellowthroat_0077_190990.jpg",
+      "url": "https://huggingface.co/datasets/pawlo2013/CUB/resolve/8a8486039c718e33d87b96ed42c0f457e6a7d939/CUB_200_2011/images/200.Common_Yellowthroat/Common_Yellowthroat_0077_190990.jpg",
+      "sha256": "5fe2e306f0a4992afd313d62879dfe6c9a226cc308059692c5080ea6b3bf22ff"
+    },
+    {
+      "path": "images/cub/200.Common_Yellowthroat/Common_Yellowthroat_0104_190489.jpg",
+      "url": "https://huggingface.co/datasets/pawlo2013/CUB/resolve/8a8486039c718e33d87b96ed42c0f457e6a7d939/CUB_200_2011/images/200.Common_Yellowthroat/Common_Yellowthroat_0104_190489.jpg",
+      "sha256": "ffed12d126d23d4c0a9199ad8b1a04e1c463a4ae30b10e37421300b461afba2d"
+    }
+  ],
+  "rights": "CUB images: non-commercial research and educational use; copyrights remain with original owners. The mirror MIT tag does not override original image terms."
+}

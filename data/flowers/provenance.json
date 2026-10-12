@@ -1,0 +1,114 @@
+{
+  "dataset": "Oxford Flowers102",
+  "retrieval_date": "2026-10-12",
+  "official_homepage": "https://www.robots.ox.ac.uk/~vgg/data/flowers/102/index.html",
+  "official_categories": "https://www.robots.ox.ac.uk/~vgg/data/flowers/102/categories.html",
+  "official_readme": "https://www.robots.ox.ac.uk/~vgg/data/flowers/102/README.txt",
+  "original_image_archive": "https://www.robots.ox.ac.uk/~vgg/data/flowers/102/102flowers.tgz",
+  "mirror_repository": "https://huggingface.co/datasets/kforghani/flowers-102",
+  "mirror_revision": "4693636dc25149528f13fd6d476650a457bfdf30",
+  "authors": "Maria-Elena Nilsback and Andrew Zisserman",
+  "citation": "Nilsback and Zisserman (2008), Automated flower classification over a large number of classes, ICVGIP.",
+  "source_annotation_scope": "The original dataset provides flower category labels and also flower segmentation images. This demo does not use the segmentation images. The eight concept labels, concept scores, and concept boxes shown here are not original dataset annotations.",
+  "annotation_author": "Codex assistant",
+  "annotation_method": "Direct visual inspection of each original JPEG with view_image, followed by assistant-authored approximate support rectangles and subjective visual estimates.",
+  "score_definition": "A number in [0,1] expressing this assistant's subjective visual confidence that the named concept is present in this image. Scores are independent across concepts, do not sum to one, are uncalibrated, and are not outputs from a trained classifier, learned CBM, detector, or statistical estimator. They do not measure localization quality.",
+  "decision_definition": "assessment is present, absent, or uncertain. present=1 only for a confident positive in this small exercise. For uncertain assessments, observable=false and present=0 is a storage placeholder rather than a reliable negative. Inspect assessment and observable before treating any value as a training label. No general calibrated threshold is claimed.",
+  "coordinate_definition": "bbox_xywh=[x_min,y_min,width,height], original JPEG pixels, origin at top-left, x rightward, y downward; continuous edge-coordinate rectangles. Boxes are approximate assistant-authored visual support regions, not masks or dataset ground truth. They can include background, overlapping objects and non-concept pixels; repeated-object boxes are illustrative, not exhaustive. Boxes are omitted for absent/uncertain concepts.",
+  "ground_truth_definition": "ground_truth_concept_boxes=null because no native concept boxes were loaded. annotation_boxes=[] for an absent/uncertain judgment does not claim a complete verified absence.",
+  "license_and_rights": "The official homepage and README inspected on 2026-10-12 make the dataset publicly downloadable and describe research publications but do not state an explicit image reuse license. Original image copyright and embedded attribution remain with their owners; no open image license is inferred from the mirror. The original watermark in image_05147.jpg is preserved.",
+  "images": [
+    {
+      "image_id": 5147,
+      "mirror_class_id": 5,
+      "original_url": "https://huggingface.co/datasets/kforghani/flowers-102/resolve/4693636dc25149528f13fd6d476650a457bfdf30/test/5/image_05147.jpg",
+      "local_path": "images/flowers/image_05147.jpg",
+      "sha256": "1584b9082b71b255e69937be85e779ed887738460ec851ced62555c2bfb6ccaf",
+      "bytes": 29715,
+      "verified_official_class_id": 5,
+      "verified_official_class_name": "english marigold",
+      "official_category_thumbnail_id": 5147,
+      "class_verification": "imagelabels.mat[image_id - 1] gives the class ID. An official categories.html thumbnail carrying this same class ID supplies the class name.",
+      "image_modifications": "None; downloaded JPEG bytes preserved.",
+      "visual_inspection": "Opened original JPEG with view_image by Codex assistant on 2026-10-12."
+    },
+    {
+      "image_id": 6395,
+      "mirror_class_id": 9,
+      "original_url": "https://huggingface.co/datasets/kforghani/flowers-102/resolve/4693636dc25149528f13fd6d476650a457bfdf30/test/9/image_06395.jpg",
+      "local_path": "images/flowers/image_06395.jpg",
+      "sha256": "8a87674e0b4f611d22e58ff295518381089fe083ed345568bb8abdb8cf771419",
+      "bytes": 61461,
+      "verified_official_class_id": 9,
+      "verified_official_class_name": "monkshood",
+      "official_category_thumbnail_id": 6415,
+      "class_verification": "imagelabels.mat[image_id - 1] gives the class ID. An official categories.html thumbnail carrying this same class ID supplies the class name.",
+      "image_modifications": "None; downloaded JPEG bytes preserved.",
+      "visual_inspection": "Opened original JPEG with view_image by Codex assistant on 2026-10-12."
+    },
+    {
+      "image_id": 3828,
+      "mirror_class_id": 17,
+      "original_url": "https://huggingface.co/datasets/kforghani/flowers-102/resolve/4693636dc25149528f13fd6d476650a457bfdf30/test/17/image_03828.jpg",
+      "local_path": "images/flowers/image_03828.jpg",
+      "sha256": "739e067740dfcefb51f2a2bccbd60360d32c7418048c84db8715513f48039521",
+      "bytes": 53817,
+      "verified_official_class_id": 17,
+      "verified_official_class_name": "purple coneflower",
+      "official_category_thumbnail_id": 3886,
+      "class_verification": "imagelabels.mat[image_id - 1] gives the class ID. An official categories.html thumbnail carrying this same class ID supplies the class name.",
+      "image_modifications": "None; downloaded JPEG bytes preserved.",
+      "visual_inspection": "Opened original JPEG with view_image by Codex assistant on 2026-10-12."
+    },
+    {
+      "image_id": 6198,
+      "mirror_class_id": 49,
+      "original_url": "https://huggingface.co/datasets/kforghani/flowers-102/resolve/4693636dc25149528f13fd6d476650a457bfdf30/test/49/image_06198.jpg",
+      "local_path": "images/flowers/image_06198.jpg",
+      "sha256": "795598957708dc950153ea34eeb10442f0ac8f4a08a5cc640e7a77bac05cb86a",
+      "bytes": 30301,
+      "verified_official_class_id": 49,
+      "verified_official_class_name": "oxeye daisy",
+      "official_category_thumbnail_id": 6224,
+      "class_verification": "imagelabels.mat[image_id - 1] gives the class ID. An official categories.html thumbnail carrying this same class ID supplies the class name.",
+      "image_modifications": "None; downloaded JPEG bytes preserved.",
+      "visual_inspection": "Opened original JPEG with view_image by Codex assistant on 2026-10-12."
+    },
+    {
+      "image_id": 5399,
+      "mirror_class_id": 54,
+      "original_url": "https://huggingface.co/datasets/kforghani/flowers-102/resolve/4693636dc25149528f13fd6d476650a457bfdf30/test/54/image_05399.jpg",
+      "local_path": "images/flowers/image_05399.jpg",
+      "sha256": "d3483718d0e9ceab942b4d30d687ee19a8315358a71c3ba4e171c5f9247d1de8",
+      "bytes": 46453,
+      "verified_official_class_id": 54,
+      "verified_official_class_name": "sunflower",
+      "official_category_thumbnail_id": 5414,
+      "class_verification": "imagelabels.mat[image_id - 1] gives the class ID. An official categories.html thumbnail carrying this same class ID supplies the class name.",
+      "image_modifications": "None; downloaded JPEG bytes preserved.",
+      "visual_inspection": "Opened original JPEG with view_image by Codex assistant on 2026-10-12."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.robots.ox.ac.uk/~vgg/data/flowers/102/README.txt",
+      "local_path": "data/flowers/README.txt",
+      "sha256": "528ba24f680c5e10c307ed9a87e9ae49b6419bb4dc410855e49ccea8f4208c9e"
+    },
+    {
+      "url": "https://www.robots.ox.ac.uk/~vgg/data/flowers/102/imagelabels.mat",
+      "local_path": "data/flowers/imagelabels.mat",
+      "sha256": "4903e94206bac23bf772aadf06451916df56b58fc483a62db32a97b82656651d"
+    },
+    {
+      "url": "https://www.robots.ox.ac.uk/~vgg/data/flowers/102/setid.mat",
+      "local_path": "data/flowers/setid.mat",
+      "sha256": "46b8678f91fd95d3c8f4feab80d271a6c834a1dd896fe29fd3e6ad9ce5c8dccd"
+    },
+    {
+      "url": "https://www.robots.ox.ac.uk/~vgg/data/flowers/102/categories.html",
+      "local_path": "data/flowers/categories.html",
+      "sha256": "d0883f7f2aead16e6bb273d9865a44171ae17f083ed0fe397936683e7e05bc4b"
+    }
+  ]
+}
